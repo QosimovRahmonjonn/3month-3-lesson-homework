@@ -427,6 +427,10 @@ tbody tr:hover {
 .ticket-table-body tr:hover {
   background: #f7f8ff;
 }
+.dark .ticket-table-body tr:hover {
+  background: #505e6e;
+  cursor: pointer;
+}
 /* CHAT GPT /////////////////////////// */
 table {
   border-collapse: separate; /* Qator/chiziq orasidagi borderlar */
