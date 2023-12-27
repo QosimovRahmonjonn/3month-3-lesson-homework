@@ -21,9 +21,9 @@
 }
 
 body {
-  height: 100vh;
+  /* height: 100; */
   display: flex;
-  background: #f3f3f3;
+  background: #ffffff;
   position: relative;
 }
 a {
@@ -132,12 +132,15 @@ aside {
 main {
   background: #fff;
   width: 100%;
-  padding: 30px;
-  margin-left: 250px;
+  padding: 30px 30px 50px;
+  margin-left: 255px;
   transition: margin-left 0.4s ease;
-  height: 1050px;
+  height: 100%;
   position: relative;
   transition: background 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
 }
 .menu-btn {
   background: transparent;
@@ -290,7 +293,7 @@ tbody tr:hover {
   transition: all 0.4s linear;
 }
 .dark {
-  background: black;
+  background: #303740;
   transition: all 0.4s linear;
 }
 
@@ -322,7 +325,19 @@ tbody tr:hover {
 .dark .th-tickets {
   color: #fff;
 }
-
+.dark main {
+  background: #303740;
+  width: 100%;
+  padding: 30px;
+  margin-left: 255px;
+  transition: margin-left 0.4s ease;
+  height: 100%;
+  position: relative;
+  transition: background 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+}
 /* TICKETS PAGES ////////////////////////////////////// */
 
 .th-tickets {
@@ -335,6 +350,7 @@ tbody tr:hover {
   letter-spacing: 0.4px;
 }
 .ticket-table {
+  margin-top: -40px;
   border-radius: 8px;
   border: 1px solid var(--grayscale-divider, #dfe0eb);
   background: var(--grayscale-white, #fff);
@@ -430,7 +446,12 @@ tbody tr:hover {
 .ticket-table-body tr:hover {
   background: #f7f8ff;
 }
+/* CHAT GPT /////////////////////////// */
+table {
+  border-collapse: separate; /* Qator/chiziq orasidagi borderlar */
+  border-spacing: 0px; /* Qator/chiziq orasidagi masofa */
+}
+
 .ticket-table-body tr {
-  border: 1px solid #dfe0eb;
-  border-collapse: collapse;
+  border: 1px solid #dfe0eb; /* Qator borderi */
 }
